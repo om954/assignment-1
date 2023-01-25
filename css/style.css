@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #FAFAFA
+}
+
+.container, .left, .right form, .right .buttons{
+    display: flex;
+}
+.right{
+    flex-direction: column;
+}
+
+.left, .right{
+    height: 50vh;
+    width: 50vw;
+}
+
+.left{
+    justify-content: center;
+}
+
+.right .main{
+    position: absolute;
+    top: 20vh;
+    display: flex;
+    margin-left: 10px;
+}
+
+.right .main .heading{
+    font-size: 45px;
+    color: #3E3E3E;
+    font-weight: bold;
+    
+}
+
+.left .hero-image{
+    position: absolute;
+    top: 15vh;
+    border-radius: 50%;
+    border: 20px solid #fff;
+}
+
+.right .logo-image{
+    
+    height: 7vh;
+    width: 5vw;
+}
+
+.right .tagline{
+    position: absolute;
+    top: 30vh;
+    width: 35vw;
+    font-size: 40px;
+    margin-left: 1.7vw;
+    color: #3E3E3E;
+    font-family: sans-serif;
+}
+
+.right .tagline span{
+    font-weight: bolder;
+    color:  #C8242F;
+}
+
+.right .login-para{
+    position: absolute;
+    top: 43vh;
+    margin-left: 1.7vw;
+    font-size: 25px;
+    color: #3E3E3E;
+}
+
+.right form{
+    position: absolute;
+    top: 48vh;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 1.7vw;
+}
+
+.right form input{
+    width: 22vw;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.right .buttons{
+    gap: 9vw;
+    margin-top: 10px;
+}
+
+.right .buttons .login-btn{
+    font-size: 18px;
+    background-color: #C8242F;
+    color: #fff;
+    padding: 11px 41px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.right .buttons .forgot-pass{
+    text-decoration: none;
+    color: rgb(194, 191, 191);
+    margin-top: 8px;
+}
+
+.right .register-para{
+    color: rgb(194, 191, 191);
+    margin-top: 8px;
+}
+
+.right .register-para span{
+    color:  rgb(206, 38, 38);
+    cursor: pointer;
+}
