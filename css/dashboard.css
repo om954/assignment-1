@@ -1,0 +1,292 @@
+body{
+    background: #fff;
+}
+
+.navbar{
+    background: #fff;
+    height: 80px;
+    /* display:flex ; */
+    align-items: center;
+}
+
+.navbar #menu_bar{
+    position: absolute;
+    top: 30px;
+    left: 29px;
+
+/* width: 18px;
+height: 12px; */
+/* UI Properties */
+/* background: #000000 0% 0% no-repeat padding-box;
+opacity: 1; */
+
+}
+
+.navbar #company_logo{
+    position: absolute;
+    top: 25px;
+    left: 72px;
+    /* position: absolute;
+    top: 30px;
+    left: 72px;
+    /* margin-left: 25px; */
+     width: 142px;
+    height: 30px;
+
+    /* opacity: 1;
+justify-content: center;  */
+}
+
+.navbar #search_icon{
+    position: absolute;
+    top: 35px;
+    left: 291px;
+    width: 16px;
+    height: 16px;
+}
+
+.navbar #Search{
+    position: absolute;
+    top: 19px;
+    font-family: sans-serif;
+    /* margin-top: 20px; */
+    left: 321px;
+    font-size: 16px;
+    /* width: 49px;
+    height: 21px; */
+}
+
+.navbar #notification_icon{
+    position: absolute;
+    top: 35px;
+    left: 80vw;
+    height: auto;
+    width: auto;
+}
+
+.navbar #profile{
+    position: absolute;
+    top: 25px;
+    left: 85vw;
+}
+
+.navbar #john{
+    position: absolute;
+    top: 15px;
+    left: 88vw;
+    font-family: sans-serif;
+   
+    font-size: 21px;
+}
+
+.navbar #arrow{
+    position: absolute;
+    top: 38px;
+    left: 95vw;
+}
+
+.sidebar{
+    top: 80px;
+    left: 0px;
+    width: 242px;
+    height: 1279px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    float: left;
+}
+.dashboard, .analysis, .inbox, .history, .users, .maintenance, .setting{
+    /* margin-top: 25px; */
+    position: absolute;
+    /* left: 2vw; */
+    display: flex;
+    gap: 10px;
+    left: 30px;
+    align-items: center;
+    width: 183px;
+    height: 43px;
+}
+
+.sidebar > div:hover{
+    background-color:#fff3f4 ;
+}
+
+.dashboard img, .analysis img, .inbox img, .history img, .users img, .maintenance img, .setting img{
+    height: 15px;
+    width: 15px;
+    margin-left: 15px;
+    color: #3E3E3E;
+}
+
+.dashboard p, .analysis p, .inbox p, .history p, .users p, .maintenance p, .setting p{
+    color: #3E3E3E ;
+    font-size: 16px;
+    
+}
+.dashboard{
+    top: 105px;
+}
+.analysis{
+    top: 158px;
+}
+.inbox{
+    top: 213px;
+}
+.history{
+    top: 268px;
+}
+.users{
+    top: 323px;
+}
+.maintenance{
+    top: 378px;
+}
+.setting{
+    top: 433px;
+}
+
+.main3{
+    /* top: 80px; */
+    /* margin-top: 0px; */
+    margin-left: 242px;
+    /* float: left; */
+    height: 1279px;
+    width: 1650px;
+    background-color: #fafafa;
+    
+}
+.main3 .head{
+    top: 100px;
+left: 292px;
+width: 146px;
+height: 39px;
+position: absolute;
+text-align: left;
+font: normal normal medium 30px/39px Roboto;
+letter-spacing: 0px;
+color: #000000;
+
+opacity: 1;
+font-size: 30px;
+font-family: "Roboto";
+font-weight: medium;
+
+/* top: 12vh;
+    left: 17vw; */
+}
+.main3 .product1{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 100px;
+    height: 150px;
+    width: 272px;
+    background-color: #FFFFFF;
+
+}
+.main3 .product2{
+    position: absolute;
+    margin-left: 370px;
+    margin-top: 100px;
+    height: 150px;
+    width: 272px;
+    background-color: #FFFFFF;
+
+}
+.main3 .product3{
+    position: absolute;
+    margin-left: 690px;
+    margin-top: 100px;
+    height: 150px;
+    width: 272px;
+    background-color: #FFFFFF;
+
+}
+.main3 .product4{ 
+    position: absolute;
+    margin-left: 1010px;
+    margin-top: 100px;
+    height: 150px;
+    width: 272px;
+    background-color: #FFFFFF;
+
+}
+.main3 .product5{
+    position: absolute;
+    margin-left: 1330px;
+    margin-top: 100px;
+    height: 150px;
+    width: 272px;
+    background-color: #FFFFFF;
+
+}
+.main3 .product1 .figure, .main3 .product2 img ,.main3 .product3 img, .main3 .product4 img, .main3 .product5 img{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    margin-top: 50px;
+    margin-left: 45px;
+}
+.value1, .value3, .value5, .value7, .value9{
+    position: absolute;
+    margin-top: 42px;
+    margin-left: 100px;
+    font-size: 30px;
+}
+.value2, .value4, .value6, .value8, .value10{
+    position: absolute;
+    margin-top: 77px;
+    margin-left: 100px;
+    font-size: 18px;
+}
+
+.sale{
+    position: absolute;
+    margin-left: 50px;
+    height: 510px;
+    width: 1020px;
+    margin-top: 300px;
+    background-color: #FFFFFF;
+}
+.sale .top .heading{
+    /* position: absolute; */
+    margin-top: 23.52px;
+    margin-left: 30px;
+    font-size: 22px;
+    color: #3E3E3E;
+}
+/* .sale .top .heading, .country-sale .heading, .listing .heading{
+    position: absolute;
+    top: 3vh;
+    left: 2vw;
+    font-size: 22px;
+    color: #3E3E3E;
+} */
+
+.sale .top .timeline{
+    position: absolute;
+    top: 3.5vh;
+    left: 40vw;
+    display: flex;
+    gap: 25px;
+    font-size: 15px;
+    color: #ADADAD;
+}
+
+.sale .graph{
+    position: absolute;
+    top: 13vh;
+    left: 2vw;
+    width: 47vw;
+}
+
+.sale .top .timeline .yearly{
+    color: #C8242F;
+}
+
+.sale .top .timeline .line{
+    position: absolute;
+    top: 4.4vh;
+    left: 7.7vw;
+    background-color: #C8242F;
+    height: 2px;
+    width: 40px;
+}
