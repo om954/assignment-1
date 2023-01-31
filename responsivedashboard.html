@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/responsivedashboard.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="left">
+            <img class="menu-bar" src="./images/menu-bar.svg" alt=""  id="dashmenu" onclick="togglesidebar()">
+            <img class="header-logo" src="./images/header-logo.svg" alt="">
+            <label><img class="search-icon" src="./images/search-icon.svg" alt=""></label>
+            <input class="search-input" type="text" placeholder="Search">
+        </div>
+        <div class="right">
+            <img class="notifications" src="./images/notification-icon.svg" alt="">
+            <img class="profile" src="./images/profile.png" alt="">
+            <span class="user-name">John Doe</span>
+            <img class="arrow" src="./images/downward-arrow.svg" alt="">
+        </div>
+    </div>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xl-2 col col-md-2" style="background-color: #fff;">
+            <ol class="dol" type="none" style="margin-top: 30px;">
+            <li class="lis" style="background-color: #FFF3F4;">
+            <img src="./images/dashboard-active.svg" alt="dashboard" width="15px" class="imgd">
+            <p class="par" style="color: #C8242F;">Dashboard</p>
+            </li>
+            <li class="lis">
+            <img src="./images/graph-default.svg" alt="graph-default" class="imgd">
+            <p class="par">Analysis</p>
+            </li>
+            <li class="lis">
+            <img src="./images/inbox-default.svg" alt="inbox-default" class="imgd">
+            <p class="par">Inbox</p>
+            </li>
+            <li class="lis">
+            <img src="./images/clock-default.svg" alt="clock-default" class="imgd">
+            <p class="par">History</p>
+            </li>
+            <li class="lis">
+            <img src="./images/user-default.svg" alt="user-default" class="imgd">
+            <p class="par">Users</p>
+            </li>
+            <li class="lis">
+            <img src="./images/maintenance-default.svg" alt="maintenance-default" class="imgd">
+            <p class="par">Maintenance</p>
+            </li>
+            <li class="lis">
+            <img src="./images/setting-default.svg" alt="setting-default" class="imgd">
+            <p class="par">Setting</p>
+            </li>
+            </ol>
+        </div>
+        <div class="col-md-10 col-lg-10" style="margin-top: 10px;background-color: rgb(250, 250, 250);padding-left: 50px;width: 1582px;">
+                <div class="row">
+                <p class="h4" style="margin-top: 40px; margin-left: 48px;">Dashboard</p>
+                </div>
+                <div class="row" style="display: flex;margin-left: 0px;">
+                <div class="col-xl-2 col-md-2 col-sm-3 d4" style="display: flex; gap: 19px;">
+                <img src="./images/star.svg" alt="star" class="img1">
+                <div style="margin-top: 20px;"><p class="h6"><p class="h4">23,456</p>New Products</p></div>
+                </div>
+                <div class="col-xl-2 col-md-2 col-sm-3 col-half-offset d4" style="display: flex; gap: 19px;">
+                <img src="./images/new-product.svg" alt="new-product" class="img1">
+                <div style="margin-top: 20px;"><p class="h6"><p class="h4">2345</p>Added Product</p></div>
+                </div>
+                <div class="col-xl-2 col-md-2 col-sm-3 col-half-offset d4" style="display: flex; gap: 19px;">
+                <img src="./images/total-product.svg" alt="total-product" class="img1">
+                <div style="margin-top: 20px;"><p class="h6"><p class="h4">456</p>Total Product</p></div>
+                </div>
+                <div class="col-xl-2 col-md-2 col-sm-3 col-half-offset d4" style="display: flex; gap: 19px;">
+                <img src="./images/dollar-filled.svg" alt="dollar-filled" class="img1">
+                <div style="margin-top: 20px;"><p class="h6"><p class="h4">5678</p>Today's Sale</p></div>
+                </div>
+                <div class="col-xl-2 col-md-2 col-sm-3 col-half-offset d4" style="display: flex; gap: 19px;">
+                <img src="./images/money-bag.svg" alt="money-bag" class="img1">
+                <div style="margin-top: 20px;"><p class="h6"><p class="h4">5342</p>Total Sale</p></div>
+                </div>
+                </div>
+
+                <div class="row" style="gap: 20px; margin-left: 0px;margin-top: 30px;margin-right: 0px;">
+                    <div class="col-xl-7 col-md-7 col-sm-11 col-xs-11 d5">
+                    
+                    <div style="display: flex; margin-top:20px;">
+                    <div class="left">
+                    <p><b>Sale</b></p>
+                    </div>
+                    <div class="right" style=" gap: 10px;">
+                    <p style="color: #ADADAD; font-size: 12px;">Weekly</p>
+                    <p style="color: #ADADAD; font-size: 12px;">Monthly</p>
+                    <p style="color: #C8242F; font-size: 12px;">Yearly</p>
+                    </div>
+                    </div>
+                    <div class="">
+                    <img class="img-thumbnail" src="./images/data-graph.png" alt="" style="border: none;">
+                    </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 col-sm-6 d7 " style="margin-left: 10px;">
+                    <div class="row" style="margin-top: 20px; margin-left: 5px;">
+                    <div class="">
+                    <p class="h5"><b>Sales By Country</b></p>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="">
+                    <img class="img-thumbnail " src="./images/pie-chart.svg" alt="pie-chart" style="border: none;">
+                    </div>
+                    </div>
+                    <div style="height: 20px;" class="div35">
+                        <img src="./images/radio-checked-icon.svg" alt="radio-checked-icon">
+                        <p class="coun">United States of America</p>
+                    </div>
+                        <div style="height: 20px;" class="div36">
+                        <img src="./images/radio-checked-icon.svg" alt="">
+                        <pclass="coun">Canada</p>
+                        </div>
+                        <div style="height: 20px;" class="div37">
+                        <img src="./images/radio-checked-icon.svg" alt="">
+                        <pclass="coun">Russia</p>
+                        </div>
+                        <div style="height: 20px;" class="div38">
+                        <img src="./images/radio-checked-icon.svg" alt="">
+                        <p class="coun">India</p>
+                        </div>
+                        </div>
+                </div>
+                <div class="row" style="background-color: white;margin-left: 30px;margin-top: 30px;margin-right: 40px;">
+                    <div class="" style="display: flex;">
+                    <p class="left"><b>Invoices</b></p>
+                    
+                    <p class="right" style="color: #C8242F; font-size: 12px;">View All</p>
+                    </div>
+                    <div class="table-responsive">
+                    <table class="table" style="border: 2px; font-size: 15px; vertical-align: middle; border-color: #ddd;">
+                    <tr style="color: #ADADAD;">
+                    <td>INCOICE</td>
+                    <td>COMPANY NAME</td>
+                    <td>EMAIL</td>
+                    <TD>DUE DATE</TD>
+                    <TD>STATUS</TD>
+                    <TD>AMOUNT</TD>
+                    </tr>
+                    <tr>
+                    <td>651535</td>
+                    <td>Public Adjusting Firm</td>
+                    <td>georgia.young@example.com</td>
+                    <td>24 May, 2020</td>
+                    <td class="cell">Paid</td>
+                    <td>$47,800</td>
+                    </tr>
+                    <tr>
+                    <td>558612</td>
+                    <td>Other</td>
+                    <td>jessica.hanson@example.com</td>
+                    <td>24 May, 2020</td>
+                    <td class="cell">Paid</td>
+                    <td>$98,000</td>
+                    </tr>
+                    <tr>
+                    <td>558612</td>
+                    <td>Vendor</td>
+                    <td>alma.lawson@example.com</td>
+                    <td>8 Sep, 2020</td>
+                    <td class="cell">Paid</td>
+                    <td>$20,900</td>
+                    </tr>
+                    <tr>
+                    <td>558612</td>
+                    <td>Property Management Company</td>
+                    <td>kenzi.lawson@example.com</td>
+                    <td>22 Oct, 2020</td>
+                    <td class="cell">Paid</td>
+                    <td>$10,570</td>
+                    </tr>
+                    <tr>
+                    <td>651535</td>
+                    <td>Subcontractor Company</td>
+                    <td>jackson.graham@example.com</td>
+                    <td>1 Feb, 2020</td>
+                    <td class="fail">Failed</td>
+                    <td>$10,200</td>
+                    </tr>
+                    <tr>
+                    <td>653518</td>
+                    <td>Mortgage Company</td>
+                    <td>felicia.reid@example.com</td>
+                    <td>22 Oct, 2020</td>
+                    <td class="pending">Pending</td>
+                    <td>$12,600</td>
+                    </tr>
+                    <tr>
+                    <td>487441</td>
+                    <td>TPA</td>
+                    <td>dolores.chambers@example.com</td>
+                    <td>21 Sep, 2020</td>
+                    <td class="cell">Paid</td>
+                    <td>$11,170</td>
+                    </tr>
+                    <tr>
+                    <td>267400</td>
+                    <td>Fire Department</td>
+                    <td>nevaeh.simmons@example.com</td>
+                    <td>17 Oct, 2020</td>
+                    <td class="fail">Failed</td>
+                    <td>$28,000</td>
+                    </tr>
+                    <tr>
+                    <td>449003</td>
+                    <td>Insurance Carrier</td>
+                    <td>curtis.weaver@example.com</td>
+                    <td>21 Sep, 2020</td>
+                    <td class="cell">Paid</td>
+                    <td>$10,000</td>
+                    </tr>
+                    </table>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+
+        </div>
+         
+    </div>
+</div>
+</html> 
+
