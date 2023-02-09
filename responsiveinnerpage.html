@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innerpage</title>
+    <!-- <link rel="stylesheet" href="./CSS/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./CSS/responsiveinnerpage.css">
+</head>
+<body>
+    <div class="Container">
+        <!-- ------------------
+                Navbar
+            ------------------- -->
+        <div class="Navbar">
+            <div class="left">
+                <img class="menu-bar" src="./images/menu-bar.svg" alt=""  id="dashmenu" onclick="togglesidebar()">
+                <img class="header-logo" src="./images/header-logo.svg" alt="">
+                <label><img class="search-icon" src="./images/search-icon.svg" alt=""></label>
+                <input class="search-input" type="text" placeholder="Search">
+            </div>
+            <div class="right">
+                <img class="notifications" src="./images/notification-icon.svg" alt="">
+                <img class="profile" src="./images/profile.png" alt="">
+                <span class="user-name">John Doe</span>
+                <img class="arrow" src="./images/downward-arrow.svg" alt="">
+            </div>
+        </div>
+        <!-- -------------------
+                Sidebar
+            -------------------- -->
+            <div class="main-container">
+                <div class="sidebar" id="dashsidebar">
+                    <ol>
+                        <li class="active-list">
+                            <img class="sidebar-img" src="./images/dashboard-active.svg" alt="">
+                            <span>Dashboard</span>
+                        </li>
+                        <li>
+                            <img class="sidebar-img" src="./images/graph-default.svg" alt="">
+                            <span>Analysis</span>
+                        </li>
+                        <li>
+                            <img class="sidebar-img" src="./images/inbox-default.svg" alt="">
+                            <span>Inbox</span>
+                        </li>
+                        <li>
+                            <img class="sidebar-img" src="./images/clock-default.svg" alt="">
+                            <span>History</span>
+                        </li>
+                        <li>
+                            <img class="sidebar-img" src="./images/user-default.svg" alt="">
+                            <span>Users</span>
+                        </li>
+                        <li>
+                            <img class="sidebar-img" src="./images/maintenance-default.svg" alt="">
+                            <span>Maintenance</span>
+                        </li>
+                        <li>
+                            <img class="sidebar-img" src="./images/setting-default.svg" alt="">
+                            <span>Settings</span>
+                        </li>
+                    </ol>
+                </div>
+                <div class="analysis">
+                    <div class="header"><h1 class="heading">Ananlysis</h1></div>
+                    <div class="columns">
+                        <div class="one-column">
+                            <p class="column-heading">One - Column</p><br>
+                            <input class="one-input" type="text" name="" id="" placeholder="Name">
+                            <br> <br>
+                            <select class="one-input"  class="occupation">
+                                <option value="Dropdown">Dropdown</option>
+                                <option value="React JS Developer">React JS Developer</option>
+                                <option value=".NET Developer">.NET Developer</option>
+                                <option value="UI/UX Designer">UI/UX Designer</option>
+                                <option value="UI/UX Designer">Java Developer</option>
+                            </select>
+                            <br><br>
+                            <textarea class="one-input" name="" id="" cols="30" rows="7" placeholder="Multiple lines"></textarea>
+                        </div>
+                        <div class="two-column">
+                            <p class="column-heading">Two - Column</p> <br>
+                            <div class="lines">
+                                <div class="line-1">
+                                    <input class="two-input name-input" type="text" name="name" placeholder="Name">
+                                    <input class="two-input" type="password" name="pass" placeholder="Password">
+                                </div>
+                                <div class="line-2">
+                                    <input class="two-input name-input" type="text" name="name" placeholder="Username">
+                                    <select class="two-input"  class="occupation">
+                                        <option value="Dropdown">Dropdown</option>
+                                        <option value="React JS Developer">React JS Developer</option>
+                                        <option value=".NET Developer">.NET Developer</option>
+                                        <option value="UI/UX Designer">UI/UX Designer</option>
+                                        <option value="UI/UX Designer">Java Developer</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <p class="column-heading">Three Column</p>
+                            <div class="one">
+                                <fieldset> 
+                                    <legend>Focus</legend>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Password</legend>
+                                </fieldset>
+                                <fieldset class="disabled">
+                                    <legend>Disabled</legend>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="four-column">
+                            <p class="column-heading">Four Column</p>
+                            <div class="column-items">
+                                <fieldset class="four-input"> 
+                                    <legend>Designation</legend>
+                                </fieldset>
+                                <input class="four-input" class="full-name-input" type="text" name="name" placeholder="Name"><br><br>
+                                <input class="four-input special-input full-name-input " type="text" id="special-input" name="name" placeholder="Username"><br><br>
+                                <select class="four-input"  class="occupation">
+                                    <option value="Dropdown">Dropdown</option>
+                                    <option value="React JS Developer">React JS Developer</option>
+                                    <option value=".NET Developer">.NET Developer</option>
+                                    <option value="UI/UX Designer">UI/UX Designer</option>
+                                    <option value="UI/UX Designer">Java Developer</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="other">
+                            <p class="column-heading">Other Design Elements</p>
+                            <br>
+                            <p class="sub-heading">File Upload</p>
+                            <br>
+                            <div class="upload">
+                                <button><img src="./images/cloud-upload-icon.svg" alt="">Upload</button>
+                                <p class="upload-status">No item selected</p>
+                            </div>
+                            <br><br>
+                            <p class="sub-heading">Radio Button</p>
+                            <br>
+                            <div class="radio">
+                                <div class="radio-1">
+                                    <input type="radio" id="rad" name="rad" value="Option1">
+                                    <label for="">Option 1</label>
+                                </div>
+                                <div class="radio-2">
+                                    <input type="radio" id="rad" name="rad" value="Option2" checked>
+                                    <label for="">Option 2</label>
+                                </div>
+                            </div>
+                            <br><br>
+                            <p class="sub-heading">Checkbox</p>
+                            <br>
+                            <div class="radio">
+                                <div class="radio-1">
+                                    <input type="checkbox" id="rad" name="rad" value="Option1">
+                                    <label for="">Option 1</label>
+                                </div>
+                                <div class="radio-2">
+                                    <input type="checkbox" id="rad" name="rad" value="Option2" checked>
+                                    <label for="">Option 2</label>
+                                </div>
+                            </div>
+                            <br><br>
+                            <p class="sub-heading">Snackbar</p>
+                            <br>
+                            <div class="snackbar">
+                                <div class="line-1">
+                                    <div class="snack-1">
+                                        <img class="snack-icon" src="./images/error-icon.svg" alt="">
+                                        <p class="error-msg">This is an error message</p>
+                                    </div>
+                                    <br>
+                                    <div class="snack-2">
+                                        <img class="snack-icon" src="./images/warning-icon.svg" alt="">
+                                        <p class="warn-msg">This is a warning message</p>
+                                    </div>
+                                </div>
+                                <div class="line-2">
+                                        <div class="snack-3">
+                                            <img class="snack-icon" src="./images/info-icon.svg" alt="">
+                                            <p class="info-msg">This is an information message</p>
+                                        </div>
+                                        <br>
+                                        <div class="snack-4">
+                                            <img class="snack-icon" src="./images/success-icon.svg" alt="">
+                                            <p class="success-msg">This is a success message</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                        <br><br>
+                        <p class="sub-heading">Call to Action</p>
+                        <br>
+                        <div class="buttons">
+                            <button class="btn-1">Primary</button>
+                            <button class="btn-2">Secondary</button>
+                        </div>
+                        <br><br>
+                        <p class="sub-heading">Tabs</p>
+                        <br>
+                        <div class="tab">
+                            <p>Tab 1</p>
+                            <p>Tab 2</p>
+                            <p>Tab 3</p>
+                        </div>
+                        <br><br>
+                        <p class="random-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ipsa dolorem veritatis saepe. Animi laboriosam est aspernatur dolore eligendi repellat accusamus sit veniam illum consectetur. Esse debitis ad placeat adipisci. Sequi labore impedit repudiandae, tempore corrupti sunt dicta pariatur veritatis aperiam placeat, nulla eligendi. Omnis ipsum, soluta magnam dicta consectetur cupiditate accusamus modi sapiente sint eligendi voluptatibus quaerat labore laudantium, ad sunt placeat eius verit</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
