@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #FAFAFA;
+    font-family: sans-serif;
+}
+/* ------------
+    NAVBAR
+-------------------- */
+.Navbar{
+    height: 7vh;
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+.Navbar .left{
+    display: flex;
+    width: 75vw;
+    align-items: flex-start;
+}
+.Navbar .menu-bar{
+    margin-left: 2vw;
+    cursor: pointer;
+}
+.Navbar .header-logo{
+    margin-left: 2vw;
+    cursor: pointer;
+}
+.search-icon{
+    height: 3vh;
+    width: 3vw;
+    margin-left: 4vw;
+}
+.search-input{
+    padding: 5px 12px;
+    border: none;
+}
+.Navbar .right{
+    display: flex;
+    align-items: flex-end;
+    align-items: center;
+}
+.Navbar .notifications{
+    margin-left: 5vw;
+    cursor: pointer;
+}
+.Navbar .profile{
+    margin-left: 4vw;
+    cursor: pointer;
+}
+.Navbar .user-name{
+    margin-left: .5vw;
+    cursor: pointer;
+}
+.Navbar .arrow{
+    margin-left: 2vw;
+    cursor: pointer;
+}
+/* ----------------
+    SIDEBAR
+-------------------- */
+.sidebar{
+    height: 93vh;
+    width: 15vw;
+    background: #fff;
+}
+.sidebar-img{
+    height: 2vh;
+    width: 2vw;
+}
+.sidebar ol{
+    list-style: none;
+    padding: 2vh 2vw;
+}
+.sidebar ol li span{
+    font-size: 18px;
+}
+.sidebar .active-list{
+    background: #FFF3F4;
+}
+.sidebar ol li{
+    padding: 1vh 1vw;
+    margin-bottom: 1vh;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.sidebar ol li:hover{
+    background: #FFF3F4;
+}
+@media only screen and (max-width: 1200px){
+    .sidebar ol{
+        padding: 2vh 0vw;
+    }
+    .sidebar ol li span{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 900px){
+    .sidebar{
+        display: none;
+        position: absolute;
+        top: 50px;
+        width: 20vw;
+    }
+}
+/* -------------------
+    Analysis
+    ------------------- */
+.main-container{
+    display: flex;
+}
+.analysis{
+    margin: 3vh 2vw;
+}
+.analysis .heading{
+    font-size: 30px;
+    margin-bottom: 2vh;
+}
+.analysis .columns{
+    background: #fff;
+    height: 180vh;
+    width: 80vw;
+    padding: 3vh 2vw;
+}
+.columns .column-heading{
+    font-size: 22px;
+    color: #3E3E3E;
+}
+.one-input{
+    width: 70vw;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ADADAD;
+}
+.one-column{
+    margin-bottom: 4vh;
+}
+.two-input{
+    width: 30vw;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ADADAD;
+}
+.two-column .line-1{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10vw;
+}
+.two-column .line-2{
+    margin-bottom: 4vh;
+}
+.two-column .name-input{
+    margin-bottom: 3vh;
+}
+.two-column .lines{
+    display: flex;
+}
+.col-3 fieldset legend, .four-column fieldset legend{
+    font-size: 12px;
+}
+.col-3 fieldset, .four-column fieldset{
+    padding: 15px 15px;
+    width: 22vw;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.four-column fieldset{
+    width: 15vw;
+    margin-right: 3vw;
+}
+.col-3 .one{
+    display: flex;
+    gap: 2vw;
+}
+.col-3 .one .disabled{
+    border: 1px dashed #ADADAD;
+}
+.col-3{
+    margin-bottom: 4vh;
+}
+.four-column .column-items{
+    display: flex;
+    align-items: center;
+}
+.four-column input{
+    width: 15vw;
+}
+.full-name-input{
+    padding: 12px 15px;
+    margin-right:3.5vw;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+}
+.four-column .four-input{
+    padding: 12px 15px;
+    margin-right: 5vw;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    width: 15vw;
+}
+.four-column{
+    margin-bottom: 4vh;
+}
+.other .sub-heading{
+    font-size: 18px;
+    color: #3E3E3E;
+}
+button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 23px;
+    padding: 1vh 2vw;
+    border: 1px solid #C8242F;
+    background: #fff;
+    color: #C8242F;
+    margin-right: 1vw;
+    cursor: pointer;
+}
+.upload{
+    display: flex;
+    align-items: center;
+}
+.upload-status{
+    font-size: 12px;
+    color: #ADADAD;
+}
+.radio-1 input, .radio-2 input{
+    accent-color: #C8242F;
+}
+.radio-1{
+    margin-right: 3vw;
+}
+.radio{
+    display: flex;
+    align-items: center;
+}
+.snack-icon{
+    height: 2vh;
+    width: 2vw;
+}
+.snack-1, .snack-2, .snack-3, .snack-4{
+    display: flex;
+}
+.snack-1{
+    border: 1px solid #FF3535;
+    border-radius: 5px;
+    width: 30vw;
+    padding: 10px 0px 10px 0px;
+}
+.snack-2{
+    border: 1px solid #FFA800;
+    border-radius: 5px;
+    width: 30vw;
+    padding: 10px 0px 10px 0px;
+}
+.snack-3{
+    border: 1px solid #00B9E1;
+    border-radius: 5px;
+    width: 30vw;
+    padding: 10px 0px 10px 0px;
+}
+.snack-4{
+    border: 1px solid #00AF27;
+    border-radius: 5px;
+    width: 30vw;
+    padding: 10px 0px 10px 0px;
+}
+.error-msg{
+    color: #FF3535;
+}
+.warn-msg{
+    color: #FFA800;
+}
+.snackbar{
+    display: flex;
+}
+.line-1{
+    margin-right: 10vw;
+}
+.buttons{
+    display: flex;
+}
+.btn-1{
+    margin-right: 2vw;
+    color: #FFFFFF;
+    background: #C8242F;
+    font-size: 18px;
+    cursor: pointer;
+}
+.btn-2{
+    font-size: 18px;
+    cursor: pointer;
+}
+.tab{
+    display: flex;
+    gap: 2vw;
+    color: #ADADAD;
+    /* padding-bottom: 10px;s */
+    border-bottom: 1px solid #ADADAD;
+}
+.tab p{
+    padding-bottom: 10px;
+}
+.tab p:hover{
+    color: #C8242F;
+    border-bottom: 2px solid #C8242F;
+    cursor: pointer;
+}
+.random-text{
+    color: #3E3E3E;
+    font-size: 15px;
+}
+@media only screen and (max-width: 900px){
+    .analysis .columns{
+        height: 180vh;
+        width: 100vw;
+    }
+    .one-input{
+        width: 90vw;
+    }
+    .two-input{
+        width: 40vw;
+    }
+    .col-3 fieldset{
+        width: 29vw;
+    }
+    .four-column .four-input{
+        width: 25vw;
+    }
+}
+@media only screen and (max-width: 600px){
+    .snack-1, .snack-2, .snack-3, .snack-4{
+        width: 40vw;
+    }
+}
+@media only screen and (max-width: 360px){
+    .main-container{
+        width: 110vw;
+    }
+    .analysis{
+        width: 122vw;
+    }
+    .analysis .columns{
+        width: 100%;
+    }
+    .snackbar{
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    .snack-1, .snack-2, .snack-3, .snack-4{
+        width: 100vw;
+    }
+    .one-input{
+        width: 110vw;
+    }
+    .two-input{
+        width: 50vw;
+    }
+    .col-3 fieldset{
+        width: 35vw;
+    }
+    .four-column .column-items{
+        display: flex;
+        flex-direction: column;
+    }
+    .four-column .column-items .four-input{
+        width: 100vw;
+    }
+    #special-input{
+        width: 100vw;
+    }
+    .four-column fieldset{
+        margin-bottom: 3vh;
+    }
+}
